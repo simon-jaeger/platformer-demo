@@ -1,0 +1,93 @@
+/* reset */
+/*******************************************************************************
+removes default styling (padding, list-style, font-size, borders, ...)
+sets sane defaults (border-box, border-collapse, ...)
+*******************************************************************************/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  text-shadow: inherit;
+  -webkit-text-stroke: 0 currentColor;
+}
+
+:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+svg,
+video,
+audio,
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+textarea {
+  resize: vertical;
+}
+
+legend {
+  float: left;
+}
+legend + * {
+  clear: both;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+button,
+[aria-controls] {
+  cursor: pointer;
+}
+[aria-disabled],
+[disabled] {
+  cursor: not-allowed;
+}
+[aria-busy="true"] {
+  cursor: progress;
+}

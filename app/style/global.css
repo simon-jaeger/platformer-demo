@@ -1,0 +1,40 @@
+/* global */
+/******************************************************************************/
+:root {
+  --fontNormal: "Segoe UI", sans-serif;
+  --fontSpecial: "Segoe UI", sans-serif;
+
+  --black: #000000;
+  --white: #c0c0c0;
+}
+
+body {
+  font-family: var(--fontNormal);
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* ie10/11 notice */
+/******************************************************************************/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    overflow: hidden;
+  }
+  body::before {
+    content: "Sorry, your browser is not supported. Please revisit this site with Microsoft Edge or a modern third-party browser like Chrome or Firefox. Thank you very much and see you soon!";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 25vh 25vw;
+    color: #d0d0d0;
+    background-color: #222222;
+  }
+}
